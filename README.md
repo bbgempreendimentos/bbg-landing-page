@@ -12,6 +12,7 @@ Site estático, feito com HTML, CSS e JavaScript puros: sem framework, sem depen
 - [Deploy no Netlify](#deploy-no-netlify)
 - [Identidade visual](#identidade-visual)
 - [Seções da página](#seções-da-página)
+- [Adicionando um cliente](#adicionando-um-cliente)
 - [Pendências](#pendências)
 
 ## Tecnologias
@@ -33,6 +34,7 @@ bbg-landing-page/
 │   ├── styles.css        # Estilos, layout responsivo e animações
 │   ├── script.js         # Animações de entrada, menu mobile e ano do rodapé
 │   ├── hero-network.svg  # Arte do hero (conexões digitais)
+│   ├── clientes/         # Logos dos clientes (.webp com fundo transparente)
 │   ├── bbg-logo.webp     # Logo oficial (512×512)
 │   └── favicon.png       # Ícone da aba (192×192)
 ├── ideas.md              # Direção visual e decisões de design
@@ -97,6 +99,7 @@ Mais detalhes sobre a direção criativa estão em [`ideas.md`](ideas.md).
 | `#desafios`          | Problemas que a BBG ajuda a resolver          |
 | `#solucoes`          | Sistemas, automação e soluções empresariais   |
 | `#diferenciais`      | Por que escolher a BBG                        |
+| `#clientes`          | Logos das empresas clientes                   |
 | `#como-trabalhamos`  | Processo de trabalho em três etapas           |
 | `#contato`           | Chamada para contato                          |
 
@@ -106,6 +109,26 @@ Mais detalhes sobre a direção criativa estão em [`ideas.md`](ideas.md).
 - Marcação semântica com `aria-label` e `aria-labelledby`
 - Menu mobile que fecha com `Esc`
 - Animações desativadas para quem usa `prefers-reduced-motion`
+
+## Adicionando um cliente
+
+1. Salve o logo em `public/clientes/`, de preferência em `.webp` ou `.png` com fundo transparente e sem margens sobrando.
+2. Em `public/index.html`, dentro de `<ul class="client-grid">`, copie um bloco `<li class="client-card">` e cole **antes** do card "Sua empresa aqui":
+
+```html
+<li class="client-card reveal">
+  <div class="client-logo"><img src="/clientes/nome.webp" width="800" height="300" alt="Logo da Nome" loading="lazy" /></div>
+  <div class="client-meta">
+    <span class="card-number">02 / SEGMENTO</span>
+    <h3>Nome do cliente</h3>
+    <p>O que a empresa faz</p>
+  </div>
+</li>
+```
+
+3. Ajuste o número (`02`, `03`...), o `width`/`height` para as dimensões reais da imagem e o texto do `alt`.
+
+A grade se ajusta sozinha: 3 colunas no desktop, 2 no tablet e 1 no celular.
 
 ## Pendências
 
