@@ -32,6 +32,7 @@ bbg-landing-page/
 │   ├── index.html        # Página única da landing page
 │   ├── styles.css        # Estilos, layout responsivo e animações
 │   ├── script.js         # Animações de entrada, menu mobile e ano do rodapé
+│   ├── hero-network.svg  # Arte do hero (conexões digitais)
 │   ├── bbg-logo.webp     # Logo oficial (512×512)
 │   └── favicon.png       # Ícone da aba (192×192)
 ├── ideas.md              # Direção visual e decisões de design
@@ -108,10 +109,8 @@ Mais detalhes sobre a direção criativa estão em [`ideas.md`](ideas.md).
 
 ## Pendências
 
-- [ ] **Imagem do hero:** o `src` em `public/index.html` aponta para `/manus-storage/...`, caminho que não existe neste projeto. Adicionar a imagem em `public/` e atualizar o caminho.
 - [ ] **Canais de contato:** incluir WhatsApp, e-mail e/ou redes sociais na seção `#contato`.
 - [ ] **Imagem de compartilhamento:** adicionar a meta tag `og:image` para a prévia do link em redes sociais e no WhatsApp.
-- [ ] **Limpeza:** remover os arquivos herdados do Manus (`app.config.ts` e `public/manus-routes.json`).
 
 ---
 
