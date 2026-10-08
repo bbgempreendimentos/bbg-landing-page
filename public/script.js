@@ -17,6 +17,13 @@
     reveals.forEach((node) => observer.observe(node));
   }
 
+  const hero = document.querySelector('.hero');
+  if (hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      hero.classList.toggle('is-paused', !entry.isIntersecting);
+    }).observe(hero);
+  }
+
   document.querySelectorAll('.project-gallery').forEach((gallery) => {
     const buttons = [...gallery.querySelectorAll('[data-view]')];
     const images = [...gallery.querySelectorAll(':scope > img')];
@@ -24,6 +31,10 @@
       button.addEventListener('click', () => {
         const view = Number(button.dataset.view);
         buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        if (images[view].dataset.src) {
+          images[view].src = images[view].dataset.src;
+          images[view].removeAttribute('data-src');
+        }
         images.forEach((image, index) => { image.hidden = index !== view; });
       });
     });
