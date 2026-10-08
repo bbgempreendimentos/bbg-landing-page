@@ -33,10 +33,10 @@ bbg-landing-page/
 │   ├── index.html        # Página única da landing page
 │   ├── styles.css        # Estilos, layout responsivo e animações
 │   ├── script.js         # Animações de entrada, menu mobile e ano do rodapé
-│   ├── hero-network.svg  # Arte do hero (conexões digitais)
 │   ├── clientes/         # Logos dos clientes (.webp com fundo transparente)
 │   ├── projetos/         # Telas dos projetos desenvolvidos (.webp)
 │   ├── bbg-logo.webp     # Logo oficial (512×512)
+│   ├── bbg-logo-mark.webp # Símbolo com fundo transparente (menu e rodapé)
 │   └── favicon.png       # Ícone da aba (192×192)
 ├── ideas.md              # Direção visual e decisões de design
 ├── netlify.toml          # Configuração de deploy do Netlify
