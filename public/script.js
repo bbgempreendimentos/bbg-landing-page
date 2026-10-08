@@ -17,6 +17,18 @@
     reveals.forEach((node) => observer.observe(node));
   }
 
+  document.querySelectorAll('.project-gallery').forEach((gallery) => {
+    const buttons = [...gallery.querySelectorAll('[data-view]')];
+    const images = [...gallery.querySelectorAll(':scope > img')];
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = Number(button.dataset.view);
+        buttons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        images.forEach((image, index) => { image.hidden = index !== view; });
+      });
+    });
+  });
+
   const menu = document.querySelector('.mobile-menu');
   menu?.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => { menu.open = false; });

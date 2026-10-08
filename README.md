@@ -35,6 +35,7 @@ bbg-landing-page/
 │   ├── script.js         # Animações de entrada, menu mobile e ano do rodapé
 │   ├── hero-network.svg  # Arte do hero (conexões digitais)
 │   ├── clientes/         # Logos dos clientes (.webp com fundo transparente)
+│   ├── projetos/         # Telas dos projetos desenvolvidos (.webp)
 │   ├── bbg-logo.webp     # Logo oficial (512×512)
 │   └── favicon.png       # Ícone da aba (192×192)
 ├── ideas.md              # Direção visual e decisões de design
@@ -100,6 +101,7 @@ Mais detalhes sobre a direção criativa estão em [`ideas.md`](ideas.md).
 | `#solucoes`          | Sistemas, automação e soluções empresariais   |
 | `#diferenciais`      | Por que escolher a BBG                        |
 | `#clientes`          | Logos das empresas clientes                   |
+| `#projetos`          | Projetos já desenvolvidos pela BBG            |
 | `#como-trabalhamos`  | Processo de trabalho em três etapas           |
 | `#contato`           | Chamada para contato                          |
 
