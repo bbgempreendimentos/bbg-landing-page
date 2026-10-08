@@ -9,7 +9,7 @@ A BBG desenvolve sistemas e soluções empresariais de tecnologia. Este é o pos
 ## Sistema de design
 O azul-marinho `#0A1628` é a superfície principal, o verde `#22C58B` destaca ação e conexão, e os tons claros originais favorecem leitura e contraste. Space Grotesk estrutura títulos e Inter cuida de navegação, controles e textos. A logo quadrada verde sobre fundo escuro enviada pelo usuário é a fonte de verdade; conservar sua proporção e brilho sem redesenhar o símbolo.
 
-A composição usa capítulos de uma landing page, títulos editoriais amplos, grid assimétrico, cartões com contornos delicados, detalhes de interface inspirados em sistemas e fios/conexões luminosos. O hero é centralizado, com menu em pílula flutuante e um planeta digital em CSS (pontos verdes e atmosfera luminosa) surgindo na base, sobre o qual aparecem os logos dos clientes. Imagens conceituais devem estar identificadas; não as apresentar como screenshot de software, produto existente ou projeto de cliente.
+A composição usa capítulos de uma landing page, títulos editoriais amplos, grid assimétrico, cartões com contornos delicados, detalhes de interface inspirados em sistemas e fios/conexões luminosos. O hero é centralizado, com menu em pílula flutuante e a Terra surgindo na base (textura NASA Blue Marble com nuvens, girando devagar) envolta numa atmosfera verde luminosa. Imagens conceituais devem estar identificadas; não as apresentar como screenshot de software, produto existente ou projeto de cliente.
 
 A rolagem revela conteúdo progressivamente; microinterações, pequenos percursos luminosos e uma fita tipográfica reforçam ritmo e conexão. A navegação continua acessível por teclado e em telas pequenas. `prefers-reduced-motion` remove movimento não essencial.
 

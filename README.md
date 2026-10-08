@@ -37,6 +37,7 @@ bbg-landing-page/
 │   ├── projetos/         # Telas dos projetos desenvolvidos (.webp)
 │   ├── bbg-logo.webp     # Logo oficial (512×512)
 │   ├── bbg-logo-mark.webp # Símbolo com fundo transparente (menu e rodapé)
+│   ├── hero-earth.webp   # Textura da Terra do hero (NASA Blue Marble, domínio público)
 │   └── favicon.png       # Ícone da aba (192×192)
 ├── ideas.md              # Direção visual e decisões de design
 ├── netlify.toml          # Configuração de deploy do Netlify
