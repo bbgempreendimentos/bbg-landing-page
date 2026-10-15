@@ -2,7 +2,8 @@
   const year = document.querySelector('#year');
   if (year) year.textContent = String(new Date().getFullYear());
 
-  const reveals = [...document.querySelectorAll('.reveal')];
+  // Cada bloco marcado com data-reveal entra uma vez, com os filhos em sequência (ver styles.css).
+  const reveals = [...document.querySelectorAll('[data-reveal]')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduceMotion || !('IntersectionObserver' in window)) {
     reveals.forEach((node) => node.classList.add('in-view'));
@@ -13,7 +14,7 @@
         entry.target.classList.add('in-view');
         currentObserver.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
     reveals.forEach((node) => observer.observe(node));
   }
 
@@ -24,6 +25,7 @@
     }).observe(hero);
   }
 
+  // Troca entre as telas reais do sistema dentro do case; as imagens extras só carregam no primeiro clique.
   document.querySelectorAll('.project-gallery').forEach((gallery) => {
     const buttons = [...gallery.querySelectorAll('[data-view]')];
     const images = [...gallery.querySelectorAll(':scope > img')];
