@@ -10,7 +10,11 @@
     <meta property="og:site_name" content="BBG Empreendimentos" />
     <meta property="og:title" content="BBG Empreendimentos | Sistemas e tecnologia" />
     <meta property="og:description" content="Desenvolvimento de sistemas e soluções empresariais de tecnologia, com foco nos desafios reais de cada negócio." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og-image.jpg" />
     <meta name="twitter:title" content="BBG Empreendimentos | Sistemas e tecnologia" />
     <meta name="twitter:description" content="Sistemas e soluções empresariais de tecnologia para simplificar processos e apoiar negócios." />
     <title>BBG Empreendimentos | Sistemas e tecnologia</title>
@@ -35,7 +39,7 @@
           <a href="#solucoes">Soluções</a>
           <a href="#diferenciais">Diferenciais</a>
           <a href="#clientes">Clientes</a>
-          <a href="#projetos">Projetos</a>
+          <a href="#projetos">Cases</a>
         </nav>
         <a class="nav-action" href="#contato">Fale com a gente</a>
         <details class="mobile-menu">
@@ -45,7 +49,7 @@
             <a href="#solucoes">Soluções</a>
             <a href="#diferenciais">Diferenciais</a>
             <a href="#clientes">Clientes</a>
-            <a href="#projetos">Projetos</a>
+            <a href="#projetos">Cases</a>
             <a href="#contato">Contato</a>
           </nav>
         </details>
@@ -57,7 +61,7 @@
         <div class="hero-stars" aria-hidden="true"></div>
         <div class="hero-planet" aria-hidden="true"><span class="planet-surface"><span class="planet-map"></span></span></div>
         <div class="site-shell hero-copy">
-          <a class="hero-badge reveal" href="#projetos"><span class="hero-badge-tag">BBG</span> Conheça os projetos que já estão em uso <span aria-hidden="true">→</span></a>
+          <a class="hero-badge reveal" href="#projetos"><span class="hero-badge-tag">CASES</span> Conheça nossos cases de sucesso <span aria-hidden="true">→</span></a>
           <h1 id="hero-title" class="reveal reveal-later">Tecnologia que nasce de <em>onde menos se espera.</em></h1>
           <p class="hero-lede reveal reveal-later">A BBG desenvolve sistemas e soluções empresariais de tecnologia para simplificar processos, reduzir retrabalho e ajudar negócios a avançar.</p>
           <div class="hero-actions reveal reveal-later-2">
@@ -194,11 +198,11 @@
       <section class="projects-section" id="projetos" aria-labelledby="projects-title">
         <div class="site-shell">
           <div class="section-heading reveal">
-            <div><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> O QUE JÁ CONSTRUÍMOS</p><h2 id="projects-title">Projetos que já estão <em>em uso.</em></h2></div>
-            <p class="heading-note">Sistemas desenvolvidos pela BBG, da gestão pública a produtos digitais para o dia a dia.</p>
+            <div><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> O QUE JÁ CONSTRUÍMOS</p><h2 id="projects-title">Projetos e cases de <em>sucesso.</em></h2></div>
+            <p class="heading-note">Sistemas desenvolvidos pela BBG que já estão em uso, da gestão pública a produtos digitais para o dia a dia.</p>
           </div>
-          <div class="project-grid">
-            <article class="project-card reveal">
+          <div class="case-list">
+            <article class="project-card case-card reveal" aria-labelledby="case-docs-title">
               <div class="project-media project-gallery">
                 <div class="project-browser" aria-hidden="true"><i></i><i></i><i></i></div>
                 <div class="project-views" role="group" aria-label="Telas do sistema">
@@ -211,26 +215,67 @@
                 <img data-src="/projetos/gestao-documental-contrato.webp" width="1600" height="749" alt="Visualização de um contrato assinado eletronicamente, com informações técnicas e validação" loading="lazy" hidden />
               </div>
               <div class="project-meta">
-                <span class="card-number">01 / SETOR PÚBLICO</span>
-                <h3>Gestão Documental — Prefeitura de Horizonte</h3>
-                <p>Plataforma de gestão documental e assinatura eletrônica para a Prefeitura Municipal de Horizonte (CE). Centraliza documentos, processos e tramitação por secretaria, com assinatura digital validada por QR Code, trilha de auditoria e dashboard em tempo real.</p>
+                <div class="case-head">
+                  <span class="card-number">CASE 01 / SETOR PÚBLICO</span>
+                  <span class="case-status"><span class="status-dot" aria-hidden="true"></span>Em uso</span>
+                </div>
+                <h3 id="case-docs-title">Gestão Documental — Prefeitura de Horizonte</h3>
+                <p>Plataforma de gestão documental e assinatura eletrônica para a Prefeitura Municipal de Horizonte (CE). Centraliza documentos, processos e tramitação por secretaria em um só lugar.</p>
+                <dl class="case-facts">
+                  <div><dt>O desafio</dt><dd>Organizar documentos de várias secretarias e dar validade às assinaturas sem depender de papel.</dd></div>
+                  <div><dt>O que entregamos</dt><dd>Assinatura digital com hash SHA-256, validação por QR Code, PDF assinado, trilha de auditoria e dashboard em tempo real.</dd></div>
+                </dl>
                 <ul class="project-tags" role="list"><li>Gestão documental</li><li>Assinatura digital</li><li>Auditoria</li><li>Dashboard</li></ul>
               </div>
             </article>
-            <article class="project-card reveal reveal-later">
+            <article class="project-card case-card case-card-flip reveal" aria-labelledby="case-glow-title">
               <div class="project-media project-media-duo">
                 <div class="project-browser" aria-hidden="true"><i></i><i></i><i></i></div>
                 <img src="/projetos/glow-web.webp" width="1454" height="877" alt="Tela inicial da versão web do Glow, com feed, comunidades e indicador de impacto" loading="lazy" />
                 <img class="project-phone" src="/projetos/glow-mobile.webp" width="480" height="1067" alt="App Android do Glow com momentos e uma publicação marcada como História Real" loading="lazy" />
               </div>
               <div class="project-meta">
-                <span class="card-number">02 / PRODUTO DIGITAL</span>
-                <h3>Glow — a rede social das coisas boas</h3>
-                <p>Uma rede social feita só de coisas boas, trocando o feed infinito por histórias reais. Tem comunidades temáticas, selo de História Real, momentos no estilo stories e um indicador de impacto. Disponível na web e em app Android nativo.</p>
+                <div class="case-head">
+                  <span class="card-number">CASE 02 / PRODUTO DIGITAL</span>
+                  <span class="case-status"><span class="status-dot" aria-hidden="true"></span>Web e Android</span>
+                </div>
+                <h3 id="case-glow-title">Glow — a rede social das coisas boas</h3>
+                <p>Uma rede social feita só de coisas boas, que troca o feed infinito por histórias reais. Produto próprio da BBG, na web e em app Android nativo.</p>
+                <dl class="case-facts">
+                  <div><dt>O desafio</dt><dd>Tirar as pessoas do ciclo de doses rápidas de dopamina sem perder o prazer de estar numa rede.</dd></div>
+                  <div><dt>O que entregamos</dt><dd>Comunidades temáticas, selo de História Real, momentos no estilo stories e um indicador de impacto.</dd></div>
+                </dl>
                 <ul class="project-tags" role="list"><li>Rede social</li><li>Web</li><li>Android</li><li>Kotlin</li></ul>
               </div>
             </article>
+            <article class="project-card case-card reveal" aria-labelledby="case-coact-title">
+              <div class="project-media">
+                <div class="project-browser" aria-hidden="true"><i></i><i></i><i></i></div>
+                <picture>
+                  <source media="(min-width: 1051px)" srcset="/projetos/coact-chat.webp" width="1120" height="836" />
+                  <img src="/projetos/coact.webp" width="1600" height="748" alt="Coact em ação: um agente de IA responde a cliente no WhatsApp e envia o catálogo, ao lado de um post de Instagram criado pela IA" loading="lazy" />
+                </picture>
+              </div>
+              <div class="project-meta">
+                <div class="case-head">
+                  <span class="card-number">CASE 03 / INTELIGÊNCIA ARTIFICIAL</span>
+                  <span class="case-status"><span class="status-dot" aria-hidden="true"></span>SaaS com IA</span>
+                </div>
+                <h3 id="case-coact-title">Coact — sua empresa no automático</h3>
+                <p>Plataforma em que agentes de IA cuidam do atendimento, das vendas e do marketing da empresa, enquanto o dono acompanha tudo por um painel.</p>
+                <dl class="case-facts">
+                  <div><dt>O desafio</dt><dd>Responder clientes a qualquer hora sem perder o controle do que está sendo dito em nome da empresa.</dd></div>
+                  <div><dt>O que entregamos</dt><dd>Agentes que atendem no WhatsApp e no Telegram, entendem áudio e foto, enviam o catálogo e criam posts para o Instagram, com CRM ao vivo.</dd></div>
+                </dl>
+                <ul class="project-tags" role="list"><li>Agentes de IA</li><li>WhatsApp</li><li>Telegram</li><li>CRM</li></ul>
+              </div>
+            </article>
           </div>
+          <a class="case-next reveal" href="#contato">
+            <span class="client-next-mark" aria-hidden="true">+</span>
+            <span class="case-next-copy"><b>O próximo case pode ser o seu</b><span>Conte o desafio da sua empresa e vamos pensar a solução juntos.</span></span>
+            <span class="client-next-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
